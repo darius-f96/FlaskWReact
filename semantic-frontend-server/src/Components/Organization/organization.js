@@ -2,34 +2,8 @@ import React, { useState, useEffect }  from 'react'
 
 export const Organization = ({ ListOfOrgs }) => {
 
-    const data = [
-        oname = "",
-        id = "",
-        cui = "",
-        employees = [
-            firstname = "",
-            lastname = "",
-            age = "",
-            organizationId = id
-        ]
-    ]
-
-    function buildData(){
-        ListOfOrgs.map(org=>{
-            data.push(org)
-        })
-    }
-
-    function addEmployeeToData(e){
-        for (let i; i < data.length ; i++){
-            if (data[i] == e.organizationId){
-                data[i]['employees'].push(e)
-            }
-        }
-    }
-
     return(
-    <>
+    <>  
         {
             ListOfOrgs.map(org=>{
                 return(

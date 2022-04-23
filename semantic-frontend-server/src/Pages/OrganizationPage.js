@@ -11,22 +11,44 @@ export const OrganizationPage = () => {
     const [organizationName, setOname] = useState('')
     const [sysmessage, setSysMsg] = useState('')
 
+    const data = [
+        {
+        oname : "",
+        id : "",
+        cui : "",
+        employees : [
+        ]
+    }
+    ]
+
+    function buildData(ListOfOrgs){
+        ListOfOrgs.map(org=>{
+            data.push(org)
+        })
+        console.log(data)
+    }
+
+    function addEmployeeToData(e){
+        data.forEach( (itm) => {
+            if (itm.id === e.organizationId){
+                console.log("workssss")
+            }
+        })
+        console.log(data)
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault() //prevent page from refresh after clicking submit
 
         const sendEmployee = {firstname, lastname, age, organizationName}
         Axios.post('/addEmp', sendEmployee).then((response) => {
             setSysMsg('Employee was added successfully')
+            addEmployeeToData(response.data)
+            
         }).catch(function (error) {
             setSysMsg('Error occurred: ' + error.response.data);
           });
 
-    }
-
-    function AddChild(c){
-        c.map( (e) => {
-            
-        })
     }
 
     useEffect(()=>{
@@ -34,7 +56,8 @@ export const OrganizationPage = () => {
             if (response.status === 200)
             {
                 setOrg(response.data)
-                console.log(org)
+                console.log(response.data)
+                buildData(response.data)
             }
             else {console.log(response)}
             });
