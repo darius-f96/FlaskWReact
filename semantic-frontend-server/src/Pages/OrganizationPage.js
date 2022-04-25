@@ -11,39 +11,39 @@ export const OrganizationPage = () => {
     const [organizationName, setOname] = useState('')
     const [sysmessage, setSysMsg] = useState('')
 
-    const data = [
-        {
-        oname : "",
-        id : "",
-        cui : "",
-        employees : [
-        ]
-    }
-    ]
+    const [data, setData] = useState([])
 
     function buildData(ListOfOrgs){
-        ListOfOrgs.map(org=>{
-            data.push(org)
+        let dataResult = []
+        
+        ListOfOrgs.forEach(item => {
+            dataResult.push(item)
         })
-        console.log(data)
+        return dataResult
     }
 
     function addEmployeeToData(e){
-        data.forEach( (itm) => {
-            if (itm.id === e.organizationId){
-                console.log("workssss")
-            }
-        })
         console.log(data)
+        let dataResult = data
+        dataResult.forEach(itm => {
+            if (itm.id === e.organizationId){
+                itm.employees.push(e)
+                console.log("founddd")
+                }
+        
+        }
+        )
+        return dataResult
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault() //prevent page from refresh after clicking submit
+        e.preventDefault() 
 
         const sendEmployee = {firstname, lastname, age, organizationName}
         Axios.post('/addEmp', sendEmployee).then((response) => {
             setSysMsg('Employee was added successfully')
-            addEmployeeToData(response.data)
+            setData(addEmployeeToData(response.data))
+            setOrg(data)
             
         }).catch(function (error) {
             setSysMsg('Error occurred: ' + error.response.data);
@@ -57,7 +57,7 @@ export const OrganizationPage = () => {
             {
                 setOrg(response.data)
                 console.log(response.data)
-                buildData(response.data)
+                setData(buildData(response.data))
             }
             else {console.log(response)}
             });
@@ -68,7 +68,6 @@ export const OrganizationPage = () => {
             if (response.status === 200)
             {
                 setOrg2(response.data)
-                console.log(org2)
             }
             else {console.log(response)}
             });

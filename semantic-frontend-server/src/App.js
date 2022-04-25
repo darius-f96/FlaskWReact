@@ -1,5 +1,4 @@
-import React, { useState, useEffect }  from 'react'
-import Axios from 'axios'
+import React from 'react'
 import './App.css'
 
 import {OrganizationPage} from './Pages/OrganizationPage'

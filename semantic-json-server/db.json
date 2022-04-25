@@ -37,41 +37,6 @@
       "lastname": "Andrei",
       "organizationId": "c19c4600-b8bb-11ec-babd-77a1b71a8a66",
       "age": 18
-    },
-    {
-      "id": "f65fdf1c-c339-11ec-82c0-2d8c9e463be3",
-      "firstname": "dariussmecheru",
-      "lastname": "te",
-      "organizationId": "b577fe95-b8bb-11ec-babd-77a1b71a8a66",
-      "age": "25"
-    },
-    {
-      "id": "610e5991-c33c-11ec-82c0-2d8c9e463be3",
-      "firstname": "yrf",
-      "lastname": "sdf",
-      "organizationId": "b577fe95-b8bb-11ec-babd-77a1b71a8a66",
-      "age": "23"
-    },
-    {
-      "id": "91acb968-c33c-11ec-82c0-2d8c9e463be3",
-      "firstname": "fdsf",
-      "lastname": "fds",
-      "organizationId": "b577fe95-b8bb-11ec-babd-77a1b71a8a66",
-      "age": "1"
-    },
-    {
-      "id": "c04a9197-c33c-11ec-82c0-2d8c9e463be3",
-      "firstname": "asas",
-      "lastname": "asas",
-      "organizationId": "b577fe95-b8bb-11ec-babd-77a1b71a8a66",
-      "age": "33"
-    },
-    {
-      "id": "be21fdb0-c33d-11ec-82c0-2d8c9e463be3",
-      "firstname": "ave",
-      "lastname": "aeee",
-      "organizationId": "b577fe95-b8bb-11ec-babd-77a1b71a8a66",
-      "age": "23"
     }
   ]
 }

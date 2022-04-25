@@ -74,6 +74,11 @@ def addEmp():
                               emp_array.getAll()[-1].toJson())
       return resp_db.json()
 
+@app.route('/postToGraphql', methods = ["POST"])
+def postToGraphql():
+   
+   pass
+
 @app.route('/getOrgWEmployees', methods = ["GET"])
 def getOrgWEmployeeLink():
    resp_db = requests.get('http://{}:{}/organizations?_embed=employees'.format(app.config['server1_host'], app.config['server1_port']))

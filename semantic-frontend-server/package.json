@@ -2,7 +2,7 @@
   "name": "semantic-frontend-server",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://192.168.0.102:5000",
+  "proxy": "https://192.168.0.105:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
