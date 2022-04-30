@@ -36,6 +36,33 @@ export const OrganizationPage = () => {
         return dataResult
     }
 
+    function sendDataToS2(payload){
+        
+        Axios.post('/postToGraphql', payload).then((response) => {
+            console.log(response)
+            if (response.status === 200)
+            {
+                setSysMsg(response.data['message'])
+                Axios.get('/getOrgWEmployeesS2').then((response)=>{
+                    if (response.status === 200)
+                    {
+                        setOrg2(response.data)
+                    }
+                    else {console.log(response)}
+                    });
+            }
+ 
+        }).catch(function (error) {
+            setSysMsg('Error occurred: ' + error.data);
+          });
+    }
+
+    const handles1tos2 = (e) => {
+        e.preventDefault()
+
+        sendDataToS2(data)
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault() 
 
@@ -63,16 +90,6 @@ export const OrganizationPage = () => {
             });
     },[])
 
-    useEffect(()=>{
-        Axios.get('/getOrgWEmployeesS2').then((response)=>{
-            if (response.status === 200)
-            {
-                setOrg2(response.data)
-            }
-            else {console.log(response)}
-            });
-    },[])
-
     return(
         <>
         <h2>New employee</h2>
@@ -87,6 +104,7 @@ export const OrganizationPage = () => {
             <input type ="text" required value={organizationName} onChange={(i) => setOname(i.target.value)} ></input>
             <button>Add employee</button>
         </form>
+        <button onClick={handles1tos2}>Send to S2</button>
         <p>{sysmessage}</p>
         <h2>Server 1 data</h2>
         <Organization ListOfOrgs={org}/>

@@ -76,8 +76,66 @@ def addEmp():
 
 @app.route('/postToGraphql', methods = ["POST"])
 def postToGraphql():
+
+   json_obj = json.loads(request.data)
+   employeeArray = []
+
+   for initialOrg in json_obj:
+      for initialEmployee in initialOrg['employees']:
+         initialEmployee['organization_id'] = initialEmployee['organizationId']
+         del initialEmployee['organizationId']
+         employeeArray.append(initialEmployee)
+      del initialOrg['employees']
+
+   transport = RequestsHTTPTransport(url='http://{}:{}/'.format(app.config['server2_host'], app.config['server2_port']), verify=True, retries=3,)
+
+   client = Client(transport=transport, fetch_schema_from_transport=True)
+   mutation = gql(
+      """
+         mutation createManyOrganizationData($dat: [OrganizationInput]) { 
+            createManyOrganization(data: $dat)
+               {
+                  id
+                  name
+                  cui  
+               }
+               }
+      """
+   )
+   params = {
+      "dat" : json_obj
+   }
+   result = client.execute(mutation, variable_values=params)
    
-   pass
+   for resultedOrg in result['createManyOrganization']:
+      for initialOrg in json_obj:
+         for initialEmp in employeeArray:
+            if resultedOrg['name'] == initialOrg['name'] and initialEmp['organization_id'] == initialOrg['id']:
+               initialEmp['organization_id'] = resultedOrg['id']
+
+   mutation = gql(
+         """
+            mutation createManyEmployeeData($dat: [EmployeeInput]) { 
+               createManyEmployee(data: $dat)
+                  {
+                     id
+                     firstname
+                     lastname
+                     age
+                     organization_id 
+                  }
+                  }
+         """
+      )
+   params = {
+         "dat" : employeeArray
+      }
+   
+   result = client.execute(mutation, variable_values=params)
+   return {
+      "code": 200,
+      "message": "Data was added successfuly"
+   }
 
 @app.route('/getOrgWEmployees', methods = ["GET"])
 def getOrgWEmployeeLink():
