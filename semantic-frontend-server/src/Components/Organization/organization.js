@@ -12,6 +12,7 @@ export const Organization = ({ ListOfOrgs }) => {
                             <tr className='gridder'>
                                 <td className='gridder'>{org.name}</td>
                                 <td className='gridder'>{org.id}</td>
+                                <td className='gridder'>{org.cui}</td>
                             </tr>
                             {org.Employees?.map((emp)=> {
                                 return(

@@ -1,0 +1,245 @@
+ * Serving Flask app 'api' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.0.105:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 745-582-387
+192.168.0.186 - - [24/Apr/2022 09:59:29] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 09:59:29] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 09:59:30] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 09:59:30] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:04:19] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:07:31] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:07:31] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:23:47] "[33mGET /main.c84a0796c60169504818.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 10:23:48] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:23:48] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:23:48] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:23:48] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:25:06] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:34:35] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:34:35] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:34:52] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:41:18] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 10:41:18] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:01:24] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:01:24] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:01:55] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:04:23] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:04:23] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:04:40] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:05:23] "[33mGET /main.e5e155860330c7a5f7de.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 11:05:23] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:05:23] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:05:23] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:05:23] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:05:39] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:19:31] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:19:31] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:20:19] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:20:19] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:21:00] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:21:00] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:21:36] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:24:03] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:24:03] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:24:31] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:29:00] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:29:00] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:29:34] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:31:36] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:31:36] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 11:31:51] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:20:05] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:20:05] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:20:51] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:40:41] "[33mGET /main.dacebe827c09318602e6.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 12:40:41] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:40:41] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:40:41] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:40:41] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:41:25] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:41:25] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:44:06] "[33mGET /main.1f36d0d95ed395be0108.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 12:44:07] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:44:07] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:44:07] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:44:07] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:44:27] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:51:19] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:51:19] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:51:42] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:51:42] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:51:46] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:51:46] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:03] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:03] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:13] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:13] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:15] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:15] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:16] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:16] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:18] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:18] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:18] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:18] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:18] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:18] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:19] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:52:19] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:56:24] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:56:24] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:56:39] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:56:39] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:56:44] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:56:44] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:59:41] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:59:41] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:59:51] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 12:59:51] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:00:24] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:00:24] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:00:24] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:00:24] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:01:53] "[33mGET /main.3be61f9bcd583b4e2885.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:01:53] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:01:53] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:01:53] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:01:53] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:04:32] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:04:32] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:05:08] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:05:08] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:05:09] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:05:09] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:08:14] "[33mGET /main.f5ea5e2cefc16e9d9d08.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:08:14] "[33mGET /main.f5ea5e2cefc16e9d9d08.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:08:14] "[33mGET /main.f5ea5e2cefc16e9d9d08.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:08:14] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:08:14] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:08:14] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:08:14] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:08:14] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:08:14] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:08:14] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:08:14] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:08:23] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:08:23] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:11:08] "[33mGET /main.4eb719abdc4fbba81532.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:11:08] "[33mGET /main.4eb719abdc4fbba81532.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:11:08] "[33mGET /main.4eb719abdc4fbba81532.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:11:08] "[33mGET /main.4eb719abdc4fbba81532.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:11:09] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:11:09] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:11:09] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:11:09] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:11:09] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:11:09] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:11:09] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:11:09] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:11:09] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:11:09] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:11:30] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:35] "[33mGET /main.f51ecc05547a4b5ac331.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:16:35] "[33mGET /main.f51ecc05547a4b5ac331.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:16:35] "[33mGET /main.f51ecc05547a4b5ac331.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:16:35] "[33mGET /main.f51ecc05547a4b5ac331.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:16:35] "[33mGET /main.f51ecc05547a4b5ac331.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:16:36] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:17:35] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:17:35] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:18:33] "[33mGET /main.4541405e2c75e82ae9fb.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:18:33] "[33mGET /main.4541405e2c75e82ae9fb.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:18:33] "[33mGET /main.4541405e2c75e82ae9fb.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:18:33] "[33mGET /main.4541405e2c75e82ae9fb.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:18:34] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:18:34] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:18:34] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:18:34] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:18:34] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:18:34] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:18:34] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:18:34] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:18:34] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:18:34] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:24:24] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:24:24] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:25:08] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:25:08] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:25:10] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:25:10] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:25:45] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:27:50] "[33mGET /main.826b9677befefebf9744.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:27:50] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:27:50] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:28:03] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:28:03] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:28:37] "[33mGET /main.88e464f342f7e3b9a705.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:28:38] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:28:38] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:28:38] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:28:38] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:28:49] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:34:10] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:34:10] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:34:56] "[33mGET /main.3e3a00e462767079e45a.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:34:56] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:34:56] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:34:58] "[33mGET /main.3e3a00e462767079e45a.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:34:58] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:34:58] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:40:06] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:48:31] "[33mGET /main.42950785a140356b8059.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:48:31] "[33mGET /main.42950785a140356b8059.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:48:31] "[33mGET /main.42950785a140356b8059.hot-update.json HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 13:48:32] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:48:32] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:48:32] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:48:32] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:48:32] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:48:32] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:48:32] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:48:32] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:49:11] "POST /addEmp HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:49:43] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:49:43] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:49:45] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:49:45] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:50:37] "GET /getOrgWEmployees HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:50:37] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 13:55:58] "GET /getdata1 HTTP/1.1" 200 -
+ * Detected change in '/mnt/win/semantic-backend-server/api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 745-582-387
+ * Detected change in '/mnt/win/semantic-backend-server/api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 745-582-387
+ * Detected change in '/mnt/win/semantic-backend-server/api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 745-582-387
+192.168.0.186 - - [24/Apr/2022 14:49:44] "[33mGET /getdata2 HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 14:50:20] "[33mGET /getdata2 HTTP/1.1[0m" 404 -
+192.168.0.186 - - [24/Apr/2022 14:51:33] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 14:52:21] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -
+192.168.0.186 - - [24/Apr/2022 14:53:41] "GET /getOrgWEmployeesS2 HTTP/1.1" 200 -

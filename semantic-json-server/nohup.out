@@ -1,0 +1,42 @@
+
+  \{^_^}/ hi!
+
+  Loading db.json
+  Done
+
+  Resources
+  http://localhost:4000/organizations
+  http://localhost:4000/employees
+
+  Home
+  http://localhost:4000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+  Error, can't read from stdin
+  Creating a snapshot from the CLI won't be possible
+[0mGET /db/ [32m200[0m 1.406 ms - 987[0m
+[0mGET /organizations?_embed=employees [32m200[0m 39.560 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 4.301 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 31.752 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.695 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.324 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.577 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.561 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 4.466 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.248 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.045 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 18.252 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.804 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 4.038 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.433 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.764 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 15.288 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 12.379 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 14.407 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.942 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.804 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.908 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.877 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.601 ms - -[0m

@@ -1,0 +1,173 @@
+
+  \{^_^}/ hi!
+
+  Loading db.json
+  Done
+
+  Resources
+  http://localhost:4000/organizations
+  http://localhost:4000/employees
+
+  Home
+  http://localhost:4000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+  Error, can't read from stdin
+  Creating a snapshot from the CLI won't be possible
+[0mGET /organizations?_embed=employees [32m200[0m 17.515 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 20.959 ms - -[0m
+[0mGET /organizations/ [32m200[0m 3.491 ms - 308[0m
+[0mGET /employees/ [32m200[0m 3.251 ms - -[0m
+[0mPOST /employees [32m201[0m 9.006 ms - 170[0m
+[0mGET /organizations?_embed=employees [32m200[0m 4.470 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.069 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.778 ms - -[0m
+[0mGET /organizations/ [32m200[0m 3.586 ms - 308[0m
+[0mGET /employees/ [32m200[0m 2.495 ms - -[0m
+[0mPOST /employees [32m201[0m 2.878 ms - 176[0m
+[0mGET /organizations?_embed=employees [32m200[0m 14.312 ms - -[0m
+[0mGET /organizations/ [32m200[0m 2.611 ms - 308[0m
+[0mGET /employees/ [32m200[0m 3.558 ms - -[0m
+[0mPOST /employees [32m201[0m 2.793 ms - 181[0m
+[0mGET /organizations?_embed=employees [32m200[0m 4.548 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 15.198 ms - -[0m
+[0mGET /organizations/ [32m200[0m 3.843 ms - 308[0m
+[0mGET /employees/ [32m200[0m 2.856 ms - -[0m
+[0mPOST /employees [32m201[0m 2.966 ms - 180[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.685 ms - -[0m
+[0mGET /organizations/ [32m200[0m 1.442 ms - 308[0m
+[0mGET /employees/ [32m200[0m 2.447 ms - -[0m
+[0mPOST /employees [32m201[0m 2.899 ms - 181[0m
+[0mGET /organizations?_embed=employees [32m200[0m 11.855 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.652 ms - -[0m
+[0mGET /organizations/ [32m200[0m 2.089 ms - 308[0m
+[0mGET /employees/ [32m200[0m 2.413 ms - -[0m
+[0mPOST /employees [32m201[0m 3.084 ms - 179[0m
+[0mGET /organizations?_embed=employees [32m200[0m 11.128 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 12.516 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.550 ms - -[0m
+[0mGET /organizations/ [32m200[0m 2.426 ms - 308[0m
+[0mGET /employees/ [32m200[0m 2.886 ms - -[0m
+[0mPOST /employees [32m201[0m 3.998 ms - 166[0m
+[0mGET /organizations?_embed=employees [32m200[0m 20.296 ms - -[0m
+[0mGET /organizations/ [32m200[0m 2.661 ms - 308[0m
+[0mGET /employees/ [32m200[0m 2.444 ms - -[0m
+[0mPOST /employees [32m201[0m 2.769 ms - 168[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.585 ms - -[0m
+[0mGET /organizations/ [32m200[0m 3.331 ms - 308[0m
+[0mGET /employees/ [32m200[0m 3.137 ms - -[0m
+[0mPOST /employees [32m201[0m 3.464 ms - 172[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.935 ms - -[0m
+[0mGET /organizations/ [32m200[0m 3.560 ms - 308[0m
+[0mGET /employees/ [32m200[0m 2.455 ms - -[0m
+[0mPOST /employees [32m201[0m 3.742 ms - 177[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.834 ms - -[0m
+[0mGET /organizations/ [32m200[0m 3.074 ms - 308[0m
+[0mGET /employees/ [32m200[0m 3.902 ms - -[0m
+[0mPOST /employees [32m201[0m 2.976 ms - 178[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.891 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.503 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 12.858 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 4.191 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.624 ms - -[0m
+[0mGET /organizations/ [32m200[0m 3.533 ms - 308[0m
+[0mGET /employees/ [32m200[0m 3.044 ms - -[0m
+[0mPOST /employees [32m201[0m 3.098 ms - 168[0m
+[0mGET /organizations?_embed=employees [32m200[0m 8.937 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.201 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 15.290 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 4.434 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 13.216 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 11.457 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 14.286 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 13.079 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 12.852 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 14.475 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 11.913 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 11.276 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.076 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 18.887 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 6.496 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.230 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.298 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.334 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 12.493 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.577 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 12.481 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.546 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.674 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 12.379 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.084 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 5.148 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 15.907 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.677 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 23.851 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 13.028 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 5.202 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.694 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 9.258 ms - -[0m
+[0mGET /organizations/ [32m200[0m 3.430 ms - 308[0m
+[0mGET /employees/ [32m200[0m 2.900 ms - -[0m
+[0mPOST /employees [32m201[0m 3.217 ms - 169[0m
+[0mGET /organizations?_embed=employees [32m200[0m 14.960 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 1.843 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 4.693 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 4.456 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 6.107 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.797 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.014 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.312 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 17.201 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.022 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 7.758 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.775 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.702 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.725 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 14.927 ms - -[0m
+[0mGET /organizations/ [32m200[0m 7.587 ms - 308[0m
+[0mGET /employees/ [32m200[0m 4.033 ms - -[0m
+[0mPOST /employees [32m201[0m 1.834 ms - 172[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.165 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 12.390 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.759 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.495 ms - -[0m
+[0mGET /organizations/ [32m200[0m 3.335 ms - 308[0m
+[0mGET /employees/ [32m200[0m 3.095 ms - -[0m
+[0mPOST /employees [32m201[0m 2.790 ms - 169[0m
+[0mGET /organizations?_embed=employees [32m200[0m 11.721 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.715 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 11.774 ms - -[0m
+[0mGET /organizations/ [32m200[0m 1.357 ms - 308[0m
+[0mGET /employees/ [32m200[0m 2.847 ms - -[0m
+[0mPOST /employees [32m201[0m 3.372 ms - 171[0m
+[0mGET /organizations?_embed=employees [32m200[0m 5.430 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 6.453 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.878 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 3.225 ms - -[0m
+[0mGET /organizations/ [32m200[0m 3.007 ms - 308[0m
+[0mGET /employees/ [32m200[0m 10.439 ms - -[0m
+[0mPOST /employees [32m201[0m 2.827 ms - 173[0m
+[0mGET /organizations?_embed=employees [32m200[0m 2.814 ms - -[0m
+[0mGET /organizations?_embed=employees [32m200[0m 12.092 ms - -[0m
+
+  \{^_^}/ hi!
+
+  Loading db.json
+  Done
+
+  Resources
+  http://localhost:4000/organizations
+  http://localhost:4000/employees
+
+  Home
+  http://localhost:4000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+  Error, can't read from stdin
+  Creating a snapshot from the CLI won't be possible
+[0mGET /organizations?_embed=employees [32m200[0m 7.069 ms - -[0m
+[0mGET /db/ [32m200[0m 0.338 ms - 987[0m

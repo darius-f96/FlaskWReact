@@ -16,3 +16,4 @@ pip3 install request
 pip3 install jsonify
 pip3 install cryptography
 pip install gql[all]
+pip3 install rdflib

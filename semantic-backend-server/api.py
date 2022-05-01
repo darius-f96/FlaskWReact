@@ -3,19 +3,28 @@ from unicodedata import name
 from classes.Employee import Employees
 from classes.Organization import Organizations, Organization
 from flask import Flask, jsonify, request
-import requests, json
+import requests, json, re
 #graphql libraries
 from gql import Client, gql
 from gql.dsl import DSLSchema, DSLQuery, dsl_gql
 from gql.transport.requests import RequestsHTTPTransport
+#rdf
+from rdflib import Graph, Literal, RDF, URIRef
+from rdflib.namespace import FOAF, XSD
 
 app = Flask(__name__)
+
+prefix = URIRef("http://grafexamen#")
 
 app.config['server1_host'] = "localhost"
 app.config['server1_port'] = '4000'
 
 app.config['server2_host'] = "localhost"
 app.config['server2_port'] = '3000'
+
+app.config['server3_host'] = "192.168.0.186"
+app.config['server3_port'] = '8080'
+app.config['server3_burl'] = 'rdf4j-server/repositories/grafexamen'
 
 @app.route('/hello/<name>')
 def hello_world(name):
@@ -176,6 +185,117 @@ def get_data2():
    #result_changed = {}
    #result_changed['Organizations'] = 
    return jsonify(result['allOrganizations'])
+
+@app.route('/getOrgWEmployeesS3')
+def get_rdf4j_statements():
+
+   gr = Graph()
+   payload = "construct {?s ?p ?o} where {?s ?p ?o}"
+   headers = {
+   'Content-Type': 'application/sparql-query'
+   }
+   organizationArray = Organizations()
+   employeeArray = Employees()
+   response = requests.post('http://{}:{}/{}'.format(app.config['server3_host'], app.config['server3_port'], app.config['server3_burl']), headers=headers, data=payload)
+
+   gr.parse(response.content)
+
+   for sub in gr.subjects():
+      ent = {}
+      s = re.sub(prefix, '', sub)
+      ent['id'] = s
+      print ('subject passing by : ' + s)
+      for pred in gr.predicates(sub):
+         p = re.sub(prefix, '', pred)
+         for value in gr.objects(sub, pred):
+            v = re.sub(prefix, '', value)
+            if p == 'Name':
+               ent['name'] = v
+            elif p == 'CUI':
+               ent['cui'] = v
+            elif p == 'hasFirstName':
+               ent['firstname'] = v
+            elif p == 'hasLastName':
+               ent['lastname'] = v
+            elif p == 'hasAge':
+               ent['age'] = v
+            elif p =='employeeOf':
+               ent['organizationId'] = v
+            else:
+               continue
+      if 'cui' in ent:
+         organizationArray.addOrg(ent)
+      else:
+         employeeArray.addEmp(ent)
+
+   response = organizationArray.getAllJson()
+   for o in response:
+      for e in employeeArray.getAllJson():
+         if 'organizationId' in e and e['organizationId'] == o['id']:
+            if not 'Employees' in o:
+               o['Employees'] = []
+            o['Employees'].append(e)
+
+   return jsonify(response)
+
+@app.route('/postToRdf4j', methods=["POST"])
+def add_rdf4j_statements():
+   json_obj = json.loads(request.data)
+   employeeArray = Employees()
+   organizationArray = Organizations()
+
+   for initialOrg in json_obj:
+      for initialEmployee in initialOrg['Employees']:
+         initialEmployee['organizationId'] = initialEmployee['organization_id']
+         del initialEmployee['organization_id']
+         employeeArray.addEmp(initialEmployee)
+      del initialOrg['Employees']
+      organizationArray.addOrg(initialOrg)
+
+   gr = Graph()
+
+   for obj in employeeArray.getAll():
+      obj.addToGraph(gr)
+   
+   for obj in organizationArray.getAll():
+      obj.addToGraph(gr)
+
+   payload = gr.serialize(format='turtle')
+   headers = {
+   'Content-Type': 'application/x-turtle;charset=UTF-8'
+   }
+
+   response = requests.put('http://{}:{}/{}/statements'.format(app.config['server3_host'], app.config['server3_port'], app.config['server3_burl']), headers=headers, data=payload)
+
+   if response.content == "":
+      return {
+      "code": 200,
+      "message": "Data was added successfuly"
+   }
+   else:
+      return response.content
+
+@app.route('/addCryptoData', methods=["POST"])
+def addCryptoData():
+   crypto = json.loads(request.data)
+   print (crypto)
+   gr = Graph()
+
+   gr.add((prefix+crypto['symbol'], prefix+"hasPrice", prefix+ Literal("$"+crypto['price'], datatype=XSD.decimal)))
+   gr.add((prefix+ Literal("$"+crypto['price'], datatype=XSD.decimal), prefix+"checkedAt", Literal(crypto['checkedAt'])))
+
+   payload = gr.serialize(format='turtle')
+   headers = {
+   'Content-Type': 'application/x-turtle;charset=UTF-8'
+   }
+   print(payload)
+   response = requests.post('http://{}:{}/{}/statements?context=null'.format(app.config['server3_host'], app.config['server3_port'], app.config['server3_burl']), headers=headers, data=payload)
+
+   if response.content == "":
+      return payload + "was added to the database"
+   else:
+      return response.content
+
 
 
 if __name__ == '__main__':
