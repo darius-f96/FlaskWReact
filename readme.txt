@@ -49,3 +49,19 @@ https://www.apachefriends.org/ro/index.html
 Start XAMPP and tomcat, navigate to http://localhost:8080/ -> manager 
 Use credentials (from tomcat-users.xml)
 Deplay war file rdf4j-server from the semantic-rdf4j-server/war
+
+React-frontend installation
+Navigate to semantic-frontend-server
+npm install
+If you are running on windows in package.json you might need to change start script (use set instead of export for port change)
+
+Starting the servers:
+Navigate to each folder with command prompt or terminal
+json-server --watch db.json --port 4000
+json-graphql-server db.js
+For backend:
+.\venv\Scripts\activate.bat (windows)
+source venv/bin/activate (linux)
+python api.py
+For frontend:
+npm start
