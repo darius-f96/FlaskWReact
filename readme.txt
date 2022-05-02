@@ -22,10 +22,11 @@ Navigate to semantic-backend-server
 pip3 install virtualenv
 Sudo apt-get install virtualenv(for linux users)
 python -m venv venv
-.\venv\Scripts\activate.bat (windows)
 source venv/bin/activate (linux)
 
-# pip install Flask (might not be needed)
+For windows switch to command prompt and run the following
+.\venv\Scripts\activate.bat (windows)
+pip install Flask
 pip3 install request
 pip3 install jsonify
 pip3 install cryptography
