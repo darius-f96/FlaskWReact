@@ -33,3 +33,19 @@ pip3 install cryptography
 pip install gql[all]
 pip3 install rdflib
 
+Json-server installation:
+npm install -g json-server
+Navigate to semantic-json-server
+npm install
+
+Json-graphql-server installation:
+npm install -g json-graphql-server
+Navigate to semantic-json-graphql-server
+npm install
+
+Rdf4j-server installation
+Install XAMPP, or just tomcat based on your preference
+https://www.apachefriends.org/ro/index.html
+Start XAMPP and tomcat, navigate to http://localhost:8080/ -> manager 
+Use credentials (from tomcat-users.xml)
+Deplay war file rdf4j-server from the semantic-rdf4j-server/war
