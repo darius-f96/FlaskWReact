@@ -49,6 +49,8 @@ https://www.apachefriends.org/ro/index.html
 Start XAMPP and tomcat, navigate to http://localhost:8080/ -> manager 
 Use credentials (from tomcat-users.xml)
 Deplay war file rdf4j-server from the semantic-rdf4j-server/war
+Same with the other one rdf4j-workbench.war
+From tomcat manager navigate to the newly deployed rdf4j-workbench and create a repository called 'grafexamen'
 
 React-frontend installation
 Navigate to semantic-frontend-server
