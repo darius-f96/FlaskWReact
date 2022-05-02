@@ -1,4 +1,4 @@
-from crypt import methods
+#from crypt import methods ##doesn't work in windows
 from unicodedata import name
 from classes.Employee import Employees
 from classes.Organization import Organizations, Organization
