@@ -22,7 +22,7 @@ app.config['server1_port'] = '4000'
 app.config['server2_host'] = "localhost"
 app.config['server2_port'] = '3000'
 
-app.config['server3_host'] = "192.168.0.186"
+app.config['server3_host'] = "localhost"
 app.config['server3_port'] = '8080'
 app.config['server3_burl'] = 'rdf4j-server/repositories/grafexamen'
 
